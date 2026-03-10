@@ -82,7 +82,7 @@ ADD INDEX idx_user_id user_id TYPE minmax GRANULARITY 1;
 
 ---
 ## II. ClickHouse multi-nodes
-
+- Số lượng keeper > 2 -> thực hiện cơ chế bầu cử nếu 1 thằng chết
 
 
 
