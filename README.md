@@ -68,7 +68,7 @@ ADD INDEX idx_user_id user_id TYPE minmax GRANULARITY 1;
     - Nén rồi 2 GB
     - => Mặc dù việc giải nén tốn thêm bước nhưng so với tốn engine cho đọc 10GB vẫn thốn hơn. 
 
-- CL nén theo cột vì OLAP query theo cột nhiều hơn select *.
+- CH nén theo cột vì OLAP query theo cột nhiều hơn select *.
 
 - Cloud và On-premise sẽ dùng thuật toán nén khác nhau. 
     - Vì Cloud, họ quan tâm lưu trữ ko care compute (máy họ mạnh). 
@@ -83,8 +83,6 @@ ADD INDEX idx_user_id user_id TYPE minmax GRANULARITY 1;
 ---
 ## II. ClickHouse multi-nodes
 - Số lượng keeper > 2 -> thực hiện cơ chế bầu cử nếu 1 thằng chết
-
-
 
 ## references
 [medium](https://medium.com/@suffyan.asad1/beginners-guide-to-clickhouse-introduction-features-and-getting-started-55315107399a)
